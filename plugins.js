@@ -28,6 +28,20 @@ class Plugins {
       this.app.stop();
     }
   }
+
+  unload(plugin) {
+    if (this.plugins[plugin]) {
+      this.plugins[plugin].unload();
+      delete this.plugins[plugin];
+      console.log(`Unloaded plugin: '${plugin}'`);
+    }
+  }
+
+  stop() {
+    for (let plugin in this.plugins) {
+      this.unload(plugin);
+    }
+  }
 }
 
 module.exports = Plugins;
