@@ -1,0 +1,8 @@
+{
+  "name": "Plugin-System-with-NodeJs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/iamwekesa/Plugin-System-with-NodeJs.git",
+  "author": "Dennis E. Wekesa <dennis.e.wekesa@gmail.com>",
+  "license": "MIT"
+}
